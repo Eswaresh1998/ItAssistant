@@ -1,0 +1,107 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.1, maximum-scale=1.0">
+		<script src="libs/kore-no-conflict-start.js" type="text/javascript"></script>		
+		<script src="libs/jquery.js" type="text/javascript"></script>
+		<script src="libs/jquery.tmpl.min.js" type="text/javascript"></script>
+		<script src="libs/jquery-ui.min.js" type="text/javascript"></script>
+		<link href="libs/jquery-ui.min.css" rel="stylesheet"></link>
+		<script src="libs/moment.js" type="text/javascript"></script>
+		<script src="../libs/ie11CustomProperties.js"></script>
+		<script src="../libs/lodash.min.js"></script>
+		<script src="../libs/d3.v4.min.js"></script>
+		<script src="../libs/KoreGraphAdapter.js" type="text/javascript"></script>
+		<script src='../libs/anonymousassertion.js'></script>
+		<script src="../kore-bot-sdk-client.js"></script>
+		<script src="../libs/perfect-scrollbar.js" type="text/javascript"></script>
+	
+		<!-- Uncomment these lines for amazon polly -->
+		<!-- <script src="../plugins/aws-sdk-2.1158.0.min.js"></script>
+		<script src="../plugins/kore-aws-polly.js" type="text/javascript"></script> -->
+
+
+		<!-- Uncomment these lines for AgentDestop plugin -->
+		<!-- <link href="../plugins/agentdestop/agentdesktop.css" rel="stylesheet"></link>
+		<script src="../plugins/agentdestop/libs/ac_webrtc.min.js"></script>
+		<script src="../plugins/agentdestop/libs/audio_player.js"></script>
+		<script src="../plugins/agentdestop/config.js"></script>
+		<script src="../plugins/agentdestop/libs/c2c.js"></script>
+		<script src="../plugins/agentdestop/agentdesktop.js" ></script> -->
+
+		
+		<script src="chatWindow.js" type="text/javascript"></script>
+		<script src="libs/jquery.daterangepicker.js" type="text/javascript"></script>
+		<link href="libs/daterangepicker.css" rel="stylesheet"></link>
+		<script src="libs/jquery-clockpicker.js" type="text/javascript"></script>
+		<link href="libs/jquery-clockpicker.css" rel="stylesheet"></link>
+		<link href="../libs/kore-pickers.css" rel="stylesheet"></link>
+		<script src="../libs/kore-pickers.js" type="text/javascript"></script>
+		<script src="../libs/emoji.js" type="text/javascript"></script>
+		<script src="../libs/recorder.js" type="text/javascript"></script>
+		<script src="../libs/recorderWorker.js" type="text/javascript"></script>
+		<script src="libs/dompurify.js" type="text/javascript"></script>
+		<link href="chatWindow.css" rel="stylesheet"></link>
+		<link href="../libs/emojione.sprites.css" rel="stylesheet"></link>
+		<link href="../libs/purejscarousel.css" rel="stylesheet"></link>
+		<script src="../libs/purejscarousel.js" type="text/javascript"></script>
+		<script src="custom/customTemplate.js" type="text/javascript"></script>
+		<link href="../libs/prefect-scrollbar.css" rel="stylesheet"></link>
+		<link href="custom/customTemplate.css" rel="stylesheet"></link>
+		<!-- <script type="text/javascript" src="libs/loader.js"></script>  -->
+		<script src="kore-config.js" type="text/javascript"></script>
+
+		<!-- Uncomment these lines for Google Speech. -->
+		<!-- <script type="text/javascript" src="../libs/speech/app.js"></script>
+		<script type="text/javascript" src="https://apis.google.com/js/client.js"></script> -->
+
+		<!-- Uncomment these lines for Mircosoft Azure Speech. -->
+		<!-- <script type="text/javascript" src="../libs/speech/azure/kore-azure-speech.js"></script>
+		<script type="text/javascript" src="../libs/speech/azure/speech.sdk.bundle.js"></script> -->
+
+		<!-- Uncomment for i18n support -->
+		<!-- <script src="kore-118n-config.js" type="text/javascript"></script> -->
+		
+		<script src="kore-main.js" type="text/javascript"></script>	
+		<script src="libs/kore-no-conflict-end.js" type="text/javascript"></script>
+		
+	</head>
+	<body>		
+		<div id="kr_chatContainer">
+			<button class="openChatWindow">Open Chat Window</button>
+		</div>
+
+		<header>
+			<div class="logo-container">
+				<img src="./libs/images/Persistent_Logo_Horizontal_Orange_Silver.png" alt="Persistent Systems Logo" style="height:50px;"
+				>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#chatbot">Chatbot</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="hero" id="home">
+				<h1>Welcome to Persistent Systems powered PIBuddy</h1>
+				<p>Inspired by the innovation and technology of Persistent Systems.</p>
+			</section>
+			<section class="about" id="about">
+				<h2>About Chat Bot</h2>
+				<p class="intro">In the rapidly evolving digital landscape, chatbots emerge as beacons of innovation within large enterprises, significantly enhancing operational efficiency and productivity. These sophisticated AI-driven interfaces streamline customer service and internal processes by automating routine tasks, thereby freeing human resources for more complex and creative activities. Leveraging the capabilities of Generative AI, chatbots deliver nuanced, context-aware responses, offering instant, accurate solutions and adeptly managing multiple interactions simultaneously. This pivotal advancement not only boosts customer satisfaction and employee efficiency but also presents a scalable, reliable solution for maintaining high-quality service in expansive corporations. The future potential to scale this solution across different industries and offer it to other companies highlights its versatility and adaptability, making it a valuable asset in the competitive market. Embracing chatbot technology signifies a deep commitment to continuous innovation, underscoring the strategic necessity of chatbots in today's digital era as they become integral to competitive business strategies and operational excellence. This forward-thinking approach ensures that enterprises not only keep pace with technological advancements but also set new benchmarks for efficiency and customer engagement in the business world.</p>
+			</section>
+			<section class="chatbot" id="chatbot" style="background-color: black;">
+				<h2>Chat with Our Bot</h2>
+				<p>Explore our chatbot for instant assistance and information.</p>
+				<!-- Placeholder for chatbot integration -->
+				<div></div>
+			</section>
+		</main>
+		<footer>
+			<p>&copy; 2024 Inspired by Persistent Systems</p>
+		</footer>
+	</body>
+</html>
