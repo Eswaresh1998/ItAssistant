@@ -3043,6 +3043,7 @@ body {
     color: #ffffff;
     background-image: url('https://www.persistent.com/wp-content/uploads/2021/03/See-Beyond-Rise-Above-Banner-Plain.jpg');
     background-size: cover !important;
+    background-color: black;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
