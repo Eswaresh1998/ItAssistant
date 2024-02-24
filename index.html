@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persistent Systems</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff;
+            background-image: url('https://www.persistent.com/wp-content/uploads/2021/03/See-Beyond-Rise-Above-Banner-Plain.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            height: 100%;
+            min-height: 100vh;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+            z-index: -1;
+        }
+
+        header {
+            background-color: #221F2A;
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10%;
+        }
+
+        .logo-container img {
+            height: 250px; /* Adjust based on your logo size */
+        }
+        header{
+            height: 12vh;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #FF6B6B; /* Hover effect */
+        }
+
+        .hero, .about, .chatbot {
+            margin: 20px auto;
+            max-width: 1200px;
+            padding: 20px;
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero { animation-delay: 0.5s; }
+        .about { animation-delay: 1s; }
+        .chatbot { animation-delay: 1.5s; }
+
+        .hero {
+            text-align: center;
+            color: #625e6d;
+            background-color: transparent;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            .logo-container img {
+                margin-bottom: 10px; /* Add some space between logo and nav on small screens */
+            }
+        }
+
+        .text-details {
+            border-left: 4px solid #FF6B6B;
+            padding-left: 15px;
+            margin-top: 20px;
+        }
+
+        .intro, .text-details p {
+            text-align: justify;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .about-section h2, .hero h1, .chatbot h2 {
+            color: #FFD700; /* Golden color for headings */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://cdn.pixabay.com/photo/2024/02/24/07/27/07-27-28-32_960_720.png" alt="Persistent Systems Logo" >
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#chatbot">Chatbot</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="home">
+            <h1>Welcome to Persistent Systems powered PIBuddy</h1>
+            <p>Inspired by the innovation and technology of Persistent Systems.</p>
+        </section>
+        <section class="about" id="about">
+            <h2>About Chat Bot</h2>
+            <p class="intro">In the rapidly evolving digital landscape, chatbots emerge as beacons of innovation within large enterprises, significantly enhancing operational efficiency and productivity. These sophisticated AI-driven interfaces streamline customer service and internal processes by automating routine tasks, thereby freeing human resources for more complex and creative activities. Leveraging the capabilities of Generative AI, chatbots deliver nuanced, context-aware responses, offering instant, accurate solutions and adeptly managing multiple interactions simultaneously. This pivotal advancement not only boosts customer satisfaction and employee efficiency but also presents a scalable, reliable solution for maintaining high-quality service in expansive corporations. The future potential to scale this solution across different industries and offer it to other companies highlights its versatility and adaptability, making it a valuable asset in the competitive market. Embracing chatbot technology signifies a deep commitment to continuous innovation, underscoring the strategic necessity of chatbots in today's digital era as they become integral to competitive business strategies and operational excellence. This forward-thinking approach ensures that enterprises not only keep pace with technological advancements but also set new benchmarks for efficiency and customer engagement in the business world.</p>
+        </section>
+        <section class="chatbot" id="chatbot">
+            <h2>Chat with Our Bot</h2>
+            <p>Explore our chatbot for instant assistance and information.</p>
+            <!-- Placeholder for chatbot integration -->
+            <div></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Inspired by Persistent Systems</p>
+    </footer>
+</body>
+</html>
+
